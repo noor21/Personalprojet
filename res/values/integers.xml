@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <integer name="afc_pkey_display_view_type_def">0</integer>
+    <integer name="afc_pkey_display_sort_type_def">0</integer>
+</resources>

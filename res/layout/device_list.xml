@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/app_bg_plain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/container" android:background="@drawable/your_device_bg" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip" android:layout_alignParentTop="true">
+        <GridLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:rowCount="3" android:columnCount="1">
+            <TextView android:textStyle="bold" android:textColor="#ff0c6695" android:gravity="center" android:layout_gravity="center" android:id="@id/runningDeviceName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="2.0dip" android:layout_column="0" android:text="@string/label_device" android:layout_row="1" />
+            <TextView android:textStyle="bold" android:textColor="#ff04a253" android:layout_gravity="center" android:id="@id/my_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_column="0" android:layout_row="2" android:textAllCaps="true" />
+        </GridLayout>
+    </LinearLayout>
+    <ListView android:layout_gravity="center_horizontal" android:id="@android:id/list" android:layout_width="260.0dip" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="false" android:divider="@null" android:dividerHeight="0.0dip" android:layout_weight="1.0" android:layout_below="@id/container" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/progressBar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:id="@id/empty" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_message" android:layout_below="@id/progressBar" android:layout_centerInParent="true" />
+</RelativeLayout>

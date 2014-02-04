@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:background="@drawable/other_device_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <fragment android:id="@id/frag_list" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.kharybdis.hitchernet.DeviceListFragment" />
+    </LinearLayout>
+</FrameLayout>

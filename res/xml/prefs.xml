@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:layout="?android:preferenceLayoutChild" android:title="Title" android:key="child_checkbox_preference" android:summary="Summary" />
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top|center" android:id="@id/afc_file_item_imageview_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/afc_5dp" android:adjustViewBounds="true" android:maxWidth="@dimen/afc_thumbnail_size" android:maxHeight="@dimen/afc_thumbnail_size" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/afc_5dp" android:layout_weight="0.1">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="middle" android:id="@id/afc_file_item_textview_filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="3" android:singleLine="false" />
+        <TextView android:ellipsize="end" android:gravity="right" android:layout_gravity="right" android:id="@id/afc_file_item_textview_file_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <CheckBox android:gravity="top|center" android:layout_gravity="top|center" android:id="@id/afc_file_item_checkbox_selection" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+</LinearLayout>

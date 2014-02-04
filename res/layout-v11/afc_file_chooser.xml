@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/afc_filechooser_activity_viewgroup_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageView android:id="@id/afc_filechooser_activity_button_go_back" android:layout_alignParentLeft="true" style="\@style/afc_button_navi_left" />
+        <ImageView android:id="@id/afc_filechooser_activity_button_go_forward" android:layout_toRightOf="@id/afc_filechooser_activity_button_go_back" style="\@style/afc_button_navi_right" />
+        <RelativeLayout android:id="@id/afc_filechooser_activity_viewgroup_button_locations" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/afc_5dp" android:layout_marginRight="@dimen/afc_5dp" android:layout_toRightOf="@id/afc_filechooser_activity_button_go_forward" android:layout_alignParentRight="true">
+            <HorizontalScrollView android:id="@id/afc_filechooser_activity_view_locations_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/afc_filechooser_activity_view_locations" android:layout_width="wrap_content" android:layout_height="fill_parent" android:showDividers="0x2" />
+            </HorizontalScrollView>
+            <View android:id="@id/afc_filechooser_activity_header_view_divider" android:background="@color/afc_border_line_dark" android:layout_width="fill_parent" android:layout_height="@dimen/afc_viewgroup_button_locations_bottom_divider_height" android:layout_below="@id/afc_filechooser_activity_view_locations_container" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="start" android:gravity="center" android:id="@id/afc_filechooser_activity_textview_full_dir_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/afc_filechooser_activity_header_view_divider" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/afc_filechooser_activity_viewgroup_files" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/afc_10dp" android:layout_marginBottom="@dimen/afc_10dp" android:layout_above="@id/afc_filechooser_activity_viewgroup_footer_container" android:layout_below="@id/afc_filechooser_activity_viewgroup_header">
+        <LinearLayout android:orientation="horizontal" android:id="@id/afc_filechooser_activity_view_files_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="italic" android:gravity="center" android:layout_gravity="center" android:id="@id/afc_filechooser_activity_view_files_footer_view" android:padding="@dimen/afc_10dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.1" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/afc_filechooser_activity_viewgroup_footer_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="\?android:attr/buttonBarStyle">
+        <View android:id="@id/afc_filechooser_activity_footer_view_divider" android:layout_width="fill_parent" android:layout_height="@dimen/afc_viewgroup_button_locations_bottom_divider_height" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/afc_filechooser_activity_viewgroup_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="\?android:attr/buttonBarStyle">
+            <EditText android:textAppearance="?android:textAppearanceLarge" android:id="@id/afc_filechooser_activity_textview_saveas_filename" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="@dimen/afc_5dp" android:hint="@string/afc_hint_save_as_filename" android:singleLine="true" android:layout_weight="1.0" android:imeOptions="actionDone">
+                <requestFocus />
+            </EditText>
+            <Button android:layout_gravity="center" android:id="@id/afc_filechooser_activity_button_ok" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/afc_5dp" style="\?android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

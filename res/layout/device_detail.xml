@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@drawable/details_view" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="1.0dip" android:layout_height="1.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="1.0dip" android:layout_height="1.0dip">
+            <Button android:id="@id/btn_connect" android:layout_width="1.0dip" android:layout_height="1.0dip" android:text="@string/connect_peer_button" />
+            <Button android:id="@id/btn_disconnect" android:layout_width="1.0dip" android:layout_height="1.0dip" android:text="@string/disconnect_peer_button" />
+            <Button android:id="@id/btn_start_client" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="1.0dip" android:text="@string/get_file_button" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
